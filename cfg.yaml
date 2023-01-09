@@ -1,0 +1,56 @@
+model_path: "model_weights.pt"
+data_path: "CCPD2019-dl1.zip"
+model:
+  nChannels: 1
+  nHidden: 256
+  nClasses:
+    - 38
+    - 36
+training:
+  lr: 0.001
+  epochs: 1
+  batch_size: 96
+  device: cuda
+  seed: 42
+preprocess:
+  img_width: 400
+  img_height: 128
+provinces:
+  - "京"
+  - "皖"
+  - "甘"
+  - "陇"
+  - "粤"
+  - "黔"
+  - "贵"
+  - "辽"
+  - "川"
+  - "津"
+  - "闽"
+  - "琼"
+  - "鄂"
+  - "湘"
+  - "冀"
+  - "黑"
+  - "豫"
+  - "吉"
+  - "赣"
+  - "苏"
+  - "青"
+  - "浙"
+  - "渝"
+  - "沪"
+  - "鲁"
+  - "晋"
+  - "陕"
+  - "秦"
+  - "滇"
+  - "云"
+  - "藏"
+  - "桂"
+  - "蒙"
+  - "宁"
+  - "新"
+  - "港"
+  - "澳"
+  - "台"
